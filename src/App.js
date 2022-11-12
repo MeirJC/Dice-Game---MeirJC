@@ -1,15 +1,7 @@
 import logo from "./assets/diceSet3/dice-target.svg";
 import "./App.css";
-import Dice from "./components/Dice";
-import image1 from "./assets/diceSet3/1.png";
-import Button from "./components/Button";
 import MidSection from "./components/MidSection";
 //--------------------------------------------------------------------
-let tesobj = {
-  diceimg: image1,
-  text: "BUTTONNNN",
-  gameOver: false,
-};
 
 function onRollDice() {
   const d = [
@@ -29,8 +21,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <h1>Under Construction...</h1>
         <p>12/11/22 2:11am update: I hate this task</p>
-        <Dice image={tesobj.diceimg} />
-        <Button text={tesobj.text} onClick={onRollDice} />
+        <p>12/11/22 4:51pm update: I really hate this task</p>
         <MidSection onClick={onRollDice} />
       </header>
     </div>

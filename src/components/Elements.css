@@ -2,6 +2,11 @@ html {
   font-size: calc(15px + 0.4vw);
 }
 
+.midSection {
+  display: flex;
+  flex-direction: column;
+}
+
 .dice {
   position: relative;
   width: 8rem;

@@ -5,7 +5,7 @@ function Button(props) {
     ? `btn ${props.class}`
     : `btn ${props.gameOver ? " btnDisable " : ""}`;
   return (
-    <button className={className} onClick={props.onClick}>
+    <button className={className} onClick={props.clickFunc}>
       {props.text}
     </button>
   );
