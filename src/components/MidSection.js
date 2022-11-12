@@ -6,8 +6,8 @@ import die3 from "../assets/diceSet3/3.png";
 import die4 from "../assets/diceSet3/4.png";
 import die5 from "../assets/diceSet3/5.png";
 import die6 from "../assets/diceSet3/6.png";
-
-// set initial dices to --> dices: [1, 1]
+import "./Elements.css";
+//--------------------------------------------------
 const diceImage = {
   1: die1,
   2: die2,
@@ -16,15 +16,30 @@ const diceImage = {
   5: die5,
   6: die6,
 };
-
+//--------------------------------------------------
 function MidSection(props) {
   return (
     <div className="midSection">
-      <Dice id="dice1" image={diceImage[5]} />
-      <Dice id="dice2" image={diceImage[5]} />
-      <Button onClick={props.onClick} text="Roll" gameOver={props.gameOver} />
-      <Button onClick={props.onClick} text="Hold" gameOver={props.gameOver} />
-      {/* how to send to 2nd button other function??? */}
+      <Dice id="dice1" image={diceImage[props.game.dice1]} />
+      <Dice id="dice2" image={diceImage[props.game.dice2]} />
+      <Button
+        clas="btn"
+        clickFunc={props.onRollDice}
+        text="🎲 Roll"
+        gameOver={props.gameOver}
+      />
+      <Button
+        clas="btn"
+        clickFunc={props.onHold}
+        text="👌Hold"
+        gameOver={props.gameOver}
+      />
+      <Button
+        clas="btn newGame"
+        clickFunc={props.newGame}
+        text="🆕 New Game"
+        gameOver={props.gameOver}
+      />
     </div>
   );
 }

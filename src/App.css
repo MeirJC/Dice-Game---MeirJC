@@ -7,15 +7,11 @@ html {
 }
 
 .App-logo {
-  height: 40vmin;
+  margin-top: 1rem;
+  height: 12.5vmin;
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
 
 .App-header {
   background-color: #282c34;
@@ -23,13 +19,42 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  /* justify-content: center; */
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.currentHeader {
+  margin: 0.75rem 0;
+  padding: 0.35rem 0.6rem;
+  background-color: rgba(68, 68, 68, 0.397);
+  border-radius: 10px;
+}
+
+.gameContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* THIS IS THE SHITTTTTTTTTTTTTTTTTTTTTTTTT */
+/* .gameContainer>div>div:nth-child(2) {
+  outline: 5px solid limegreen;
+}
+
+.gameContainer>div:first-child {
+  outline: 5px solid crimson;
+} */
+
+.midSection {
+  width: 10rem;
+  position: absolute;
+  left: calc(50% - 4.5rem);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
 }
 
 @keyframes App-logo-spin {

@@ -1,12 +1,9 @@
 import "./Elements.css";
 
-function Button(props) {
-  let className = props.class
-    ? `btn ${props.class}`
-    : `btn ${props.gameOver ? " btnDisable " : ""}`;
+function Button({ clickFunc, text, clas }) {
   return (
-    <button className={className} onClick={props.clickFunc}>
-      {props.text}
+    <button className={clas} onClick={clickFunc}>
+      {text}
     </button>
   );
 }
