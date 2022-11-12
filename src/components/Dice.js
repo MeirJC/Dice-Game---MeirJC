@@ -1,7 +1,7 @@
-import "./Dice.css";
+import "./Elements.css";
 
 function Dice(props) {
-  return <img id={props.class} className="dice" alt="dice" src={props.image} />;
+  return <img className="dice" alt="dice" src={props.image} />;
 }
 
 export default Dice;
